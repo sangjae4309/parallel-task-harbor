@@ -32,5 +32,5 @@ Rather than trying to understand everything at once, run the example and observe
 
 
 ## Code Architecture
-<img width="1642" alt="Image" src="https://github.com/user-attachments/assets/4f4f4c9e-73d7-4056-970d-a1126259bac4" />
-The red-highlighted script can be replaced with the user's desired script. And redirect it by specifying in `--pre/post_proc` options.
+<img width="758" alt="Image" src="https://github.com/user-attachments/assets/6608ca78-88ad-4d07-8cea-0c8cdc258d12" /> <p>
+The red-highlighted script can be replaced with the user's desired script. And redirect it by specifying in `--pre_proc` and `--post_proc` options.
