@@ -1,5 +1,6 @@
 import importlib
 import random
+import shlex
 from datetime import datetime
 
 def ParseConfigure(config):
@@ -24,7 +25,8 @@ def ParseConfigure(config):
     param_list      = config.get('CONFIG_OPT', '--sim_params').split(' ')
     for name_sim in sim_list:
         sim_dict_o[name_sim] = {} # dict in dict
-        sim_params = config.get('SIM_LIST', name_sim).split(' ')
+        sim_value = config.get('SIM_LIST', name_sim).split(' ')
+        sim_params = shlex.split(sim_value)
         print(f"Parsing {sim_params}")
         for i in range(len(sim_params)):
             sim_dict_o[name_sim][param_list[i]] = sim_params[i]
